@@ -1,0 +1,5 @@
+# Dependencies
+node_modules/
+
+# BMad generated render cache
+_bmad/render/
