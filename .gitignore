@@ -3,3 +3,12 @@ node_modules/
 
 # BMad generated render cache
 _bmad/render/
+
+# Test artifacts
+test-results/
+playwright-report/
+allure-results/
+allure-report/
+
+# Local environment
+.env

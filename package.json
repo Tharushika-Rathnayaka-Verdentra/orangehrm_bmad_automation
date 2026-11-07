@@ -1,13 +1,26 @@
 {
   "name": "orangehrm_bmad_automation",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
+  "description": "Playwright + TypeScript Page Object Model smoke suite for the OrangeHRM open-source demo",
+  "private": true,
   "license": "ISC",
-  "type": "commonjs"
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "report": "allure generate ./allure-results --clean && allure open ./allure-report",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^20.19.0",
+    "allure": "^3.33.0",
+    "allure-playwright": "^3.14.0",
+    "dotenv": "^18.0.9",
+    "typescript": "^5.9.3"
+  }
 }
